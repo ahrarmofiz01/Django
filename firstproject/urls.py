@@ -25,5 +25,7 @@ urlpatterns = [
     path('about/',views.about,name='about'),
     path('firstapp/',include('firstapp.urls')),
     path('dashbord/',views.dashbord,name='dashbord'),
+
+    path("_reload__/",include("django_browser_reload.urls")),
     
 ]
