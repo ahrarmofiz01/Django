@@ -4,4 +4,12 @@
  {% endblock title %}
 {% block  content %}
 <h1>all app page| home page </h1>
+<div class="grid grid-cols-3 gap-4">
+{% for app in apps  %}
+<div class="chai-items">
+<img src="{{app.image.url}}" alt="">
+</div>
+{% endfor %}
+</div>
+
 {% endblock  %}
