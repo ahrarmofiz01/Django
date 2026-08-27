@@ -6,6 +6,8 @@ class appvarity(models.Model):
     APP_TYPE_CHOICE=[
         ('ml','masala'),
         ('gr','ginger'),
+        ('nl','normal'),
+        ('bt','belam'),
     ]
     name=models.CharField(max_length=100)
     image=models.ImageField(upload_to='apps/')
